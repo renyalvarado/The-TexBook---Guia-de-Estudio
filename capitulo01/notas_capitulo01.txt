@@ -1,0 +1,6 @@
+Capítulo 01 - The Name of the Game (1)
+
+Ejercicio 1.1
+Respuesta: No sabría que contestar por que desconozco el signifado de los términos, pero asumiendo que un TeXperto es la persona que conoce 'todo' sobre TeX, y un TeXnico es el que puede hacer cosas con TeX, creo que prefiero elegir el lado práctico de los enfoques propuestos.
+
+(1): La expresión 'Name of the Game' significa en inglés algo así como el punto clave o lo importante de algo.

@@ -1,0 +1,18 @@
+Es interesante el uso de la secuencia de control \show en la consola tex. Por ejemplo
+
+usuario@sicilia:/tmp$ tex
+This is TeX, Version 3.1415926 (TeX Live 2009/Debian)
+**\show\input
+> \input=\input.
+<*> \show\input
+
+? I\show\'
+> \'=macro:
+#1->{\accent 19 #1}.
+<insert>   \show\'
+                  
+<*> \show\input
+
+El primer comando muestra que input \es es una secuencia de control primitiva y el segundo muestra que \' es una macro.
+
+Nota: cuando la terminal muestra como prompt el símbolo de interrogación (?), si se quiere seguir introduciendo comando se presiona Enter para que el prompt cambie al asterisco(*) o se puede escribir una i mayúscula(I) para seguir escribiendo.

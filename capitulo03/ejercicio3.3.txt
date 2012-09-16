@@ -1,0 +1,24 @@
+Según mis pruebas \<espacio en blanco> y \<return> son macros, pero creo que tengo un problema haciendo la prueba. La respuesta del libro dice que la primera es primitiva es una primitiva y la segunda es una macro.
+La prueba realizada es:
+
+usuario@sicilia:/tmp$ tex
+This is TeX, Version 3.1415926 (TeX Live 2009/Debian)
+**\show\ 
+> \^^M=macro:
+->\ .
+<*> \show\
+          
+? 
+
+*\show\
+> \^^M=macro:
+->\ .
+<*> \show\
+          
+? 
+
+*\end
+No pages of output.
+Transcript written on texput.log.
+
+Lo que sospecho es que al escribir \<espacio en blanco> y luego presionar Enter para que programa lea lo transcrito, el interprete TeX ignora el espacio en blanco y considera solo el Enter como el caractere realmente escapado. Ojo: investigar sobre esto

@@ -1,0 +1,7 @@
+Capítulo 02 - Book Printing versus Ordinary Printing
+
+Revisar el concepto de interletraje (kerning): http://en.wikipedia.org/wiki/Kerning el cual es definido como el cambio del espacio entre las letras para mejora la percepción del texto.
+
+Ejercicio 2.5
+La versión que el carácter de control dentro del ambiente matemático $\,$ usa una construcción no diseñada para eso, es decir se está usando un uso incorrecto de algo en vez de usar una solución diseñada para resolver el problema.
+

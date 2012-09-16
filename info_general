@@ -1,0 +1,6 @@
+Notas sobre The TeX Book de Donald E. Knuth
+
+Después de mucho tiempo he decidido dejar de ser un lurker y empezar a publicar sobre las cosas que estoy estudiando en el área de tecnologíá, en este caso sobre TeX. Mi interés sobre esta herramienta empezó con mi inacabado postgrado en Ciencias de la Computación y se profundizó cuando por razones de trabajo necesité una herramienta que mostrara de forma profesional formulas matemáticas.
+
+Lo que estoy haciendo es escribir un resumen de cada uno de los capítulos del libro y haciendo (o intentado hacer :-)) todos los ejercios propuestos.
+Si los ejercicios están relacionados con el análisis de temas TeX, la respusta se encontrará dentro del archivo nota_capitulo##.tex dentro de su directorio correspondiente. Si la respuesta debe generar un archivo .tex entonces la convención del archivo es ejercio#.#.tex dentro del directorio del capítulo.
