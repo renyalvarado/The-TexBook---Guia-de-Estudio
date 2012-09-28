@@ -1,0 +1,14 @@
+Es interesante la situación que ocurre cuando se utiliza una letra
+inclinada (sea slanted o italic) y luego viene una letra normal o
+roman. Como la primera letra está inclinada y la segunda recta
+entonces visualmente ocurre una especie de robo de espacio por parte
+de la letra inclinada por ejemplo si tenemos una d itálica seguida de
+una R romana se nota mucha la diferencia. Para evitar eso TeX tiene
+una macro llamada 'correción itálica' (\/) que permite colocar un
+espacio adicional. Aunque se llama correción itálica, en realidad
+todas las letras de todas las fuentes tienen esa correción, aunque el
+espacio sea cero. En algunos caso de letras no inclinadas es necesario
+usar la 'correción itálica', por ejemplo cuando se usa una f en
+negrita y luego una comilla simple, se debe usar esa correción ya que
+se los caracteres se ven muy cercanos.
+

@@ -1,0 +1,6 @@
+Ejercicio 4.4
+¿Por qué piensa que el autor eligió los nombres '\tenpoint' and
+'\tenrm', etc., en vez de '\10point' y '\10rm'?
+
+Respuesta
+Porque las palabras de control no pueden tener números, sólo dígitos.

@@ -1,0 +1,9 @@
+Ejercicio 5.3
+Pregunta:
+Qué piensa que ocurre cuando se escribe lo siguiente:
+\centerline{This information should be {centered}.}
+\centerline So should this.
+
+Respuesta: La primera instrucción centrará el texto, mientras que la
+segunda sólo centrará la letra 'S' de la palabra 'So' y colocará el
+resto del texto en la siguiente línea (el texto no estará centrado).

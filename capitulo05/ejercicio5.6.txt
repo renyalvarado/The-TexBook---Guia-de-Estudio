@@ -1,0 +1,105 @@
+Ejercicio 5.6
+Problema:
+Suponga que \c equivale a '\count1=', \g equivale a '\global\count=1', y \s equivale a '\showthe\count1'. ¿Qué valores se mostrarán?
+{\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+
+Respuesta:
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ****
+Salida:
+Valores Locales: count1 = 1
+Valores Globales:
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ******
+Salida: 1
+Valores Locales: count1 = 1
+Valores Globales:
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   *********
+Salida: 1
+Valores Locales: count1 = 2
+Valores Globales: count1 = 2
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ************
+Salida: 1 2
+Valores Locales: count1 = 2
+Valores Globales: count1 = 2
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ***************
+Salida: 1 2
+Valores Locales: count1 = 2
+Valores Globales: count1 = 3
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   *****************
+Salida: 1 2 3
+Valores Locales: count1 = 2
+Valores Globales: count1 = 3
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ********************
+Salida: 1 2 3
+Valores Locales: count1 = 4
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   **********************
+Salida: 1 2 3 4
+Valores Locales: count1 = 4
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   *************************
+Salida: 1 2 3 4
+Valores Locales: count1 = 5
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ***************************
+Salida: 1 2 3 4 5
+Valores Locales: count1 = 5
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   *********************************
+Salida: 1 2 3 4 5 4
+Valores Locales: count1 = 6
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   *********************************
+Salida: 1 2 3 4 5 4
+Valores Locales: count1 = 6
+Valores Globales: count1 = 4
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ***********************************
+Salida: 1 2 3 4 5 4 6
+Valores Locales: count1 = 6
+Valores Globales: count1 = 4
+
+
+
+
+Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
+	   ***********************************
+Salida: 1 2 3 4 5 4 6 4
+Valores Locales: count1 = 4
+Valores Globales: count1 = 4

@@ -1,0 +1,57 @@
+Capítulo 05
+En este capítulo se indica como definir secciones del documento que se
+tratarán como bloque. La forma de establecerlo es con las llaves '{',
+'}' y con las palabras de control \begingroup y \endgroup.
+
+Pruebas Varias
+Al empezar a investigar como se definen la macros (\def), me pregunté
+si había alguna forma de emular al paquete inputenc de LaTeX para
+permitir escribir los caracteres acentuados directamente en vez de
+usar la macro \'caracter. Para intentar hacer ésto, decidí hacer una
+macro con nombre 'á' que sustituyera ese carácter por la macro
+\'a. Sin embargo en el momento tenía entendido que las macros
+(secuencia de control) normalmente empiezan con la barra invertida
+'\', pero este comportamiento se puede cambiar. Para ello investigué
+sobre los catcode, que es el mecanismo por el cual TeX define como se
+interpretarán los caracteres del texto leído, por ejemplo el carácter
+'{' tiene catcode 1, lo cual significa que él indica el inicio de un
+grupo; de igual forma el carácter '}' indica el fin de grupo y su
+catcode es 2. La explicación de los catcode se puede consultar en ésta
+página:
+
+http://www-sop.inria.fr/marelle/tralics/doc-symbols.html
+
+Finalmente, el catcode necesario para establecer un carácter como macro es
+el número 13, también definido como la macro \active. Sin embargo al
+intentar cambiar el catcode:
+
+\catcode`á=\active
+
+se genera el siguiente error:
+**\catcode`á=\active
+! Missing number, treated as zero.
+<to be read again> 
+                   ^^a1
+<*> \catcode`^^c3^^a1
+                     =\active
+? 
+Missing character: There is no ^^a1 in font cmr10
+
+por lo que intenté establecer directamente el catcode ahora basado en
+su código de caracter. Para eso utilicé la función \number á, la cuál
+generó un mensaje porque la fuente por defecto (Computer Modern Roman
+10) no tiene ese carácter, sin embargo en el dvi generado se muestra
+el código de á, el cual es 195. Ahora la macro de cambio de catcode 
+luce así:
+
+\catcode195=\active
+
+y la macro de sustitución es:
+
+\defá{\'a}
+
+Y finalmente cada vez que escribámos 'á' se sustituirá por {\'a}.
+
+Otras Referencias:
+http://en.wikibooks.org/wiki/TeX/catcode
+http://tex.stackexchange.com/questions/3336/is-it-catcode-or-catcode
