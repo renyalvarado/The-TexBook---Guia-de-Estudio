@@ -1,1 +1,15 @@
 Capítulo 06
+
+Observación: Si se quiere escribir la letra 'i' acentuda (í) se debe
+hacer de la siguiente manera:
+
+- Se tipea el acento \'
+
+- Se escribe el caracter de control que equivale a una 'i' sin el
+  punto: \i
+
+í -> \'{\i}
+Título -> T\'{\i}tulo
+
+Nota: se agrupa la 'i sin punto' para que se pueda escribir cualquier
+caracter luego y no se confunda con otra palabra de control.
