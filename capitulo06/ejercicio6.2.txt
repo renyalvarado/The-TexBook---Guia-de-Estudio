@@ -1,0 +1,6 @@
+Ejercicio 6.2
+
+En las línea 13 y 4 hay un espacio extra entre 'called---' y 'was' ya
+que el caracter de 'nueva línea' equivale en este caso a un espacio en
+blanco
+
