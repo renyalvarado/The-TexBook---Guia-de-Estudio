@@ -1,0 +1,16 @@
+Exercise 7.5
+
+%Experiment with TeX to see what \string does when it is followed by an
+%active character like ~. (Active characters behave like control
+%sequences, but they are not prefixed by an escape.) What is an easy
+%way to conduct such experiment online? What control sequence you put
+%after \string to obtain the single character token \12?
+
+\message{\string~} % Produce ~ en el archivo de log
+
+{ % Creamos un bloque para que los cambios realizados solo se apliquen allí.
+ \catcode`*=0 % Ponemos otro caracter para indicar el inicio de una secuencia de control, es decir le asignamos al grupo 0.
+ \catcode`\\=13 % Colocamos al caracter / como elemento activo.
+ *message{*string/} % Mostramos el caracter / en el log.
+ }
+\end1
