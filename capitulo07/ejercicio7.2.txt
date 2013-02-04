@@ -1,0 +1,16 @@
+EXERCISE 7.2
+Can you imagine why the designer of plain TeX decide not to make '\\'
+the control sequence for reverse slashes?
+
+Respuesta: no se me ocurrió ninguna :-), es más, en los lenguajes de
+programación C, C++ y Java, se utiliza '\\' para indicar literalmente
+la barra invertida. Copio la respuesta de Knuth:
+
+Reverse slashes (backslashes) are fairly uncommon in formulas or text,
+and \\ is very easy to type it; it was therefore felt best not to
+reserve \\ for such limited use. Typists can define \\ to be whatever
+they want (including \backslash).
+
+Al parecer el pensó que no valía la pena utilizar una combinación tan
+fácil de teclear en un caracter que difícilmente iba a aparecer en un
+texto.
