@@ -1,0 +1,8 @@
+\char`^\char`^B$_{7}$ % Se cambió la categoría a 7
+\char`^\char`^B$_{7}$ % Ídem
+M$_{11}$ % Caracter 
+\char`^\char`^B % Secuencia de Control, ya que ^^A ahora tiene código 0 y ^^C hace que finalice por tener código 10
+blanco$_{10}$ % Blanco por tener ^^C código 10
+M$_{11}$ % Caracter, luego viene ^^@ que se ignora por pertenecer a la categoría 9
+M\char`^\char`^M % Secuencia de control, se agrega ^^M al final de la línea y se elimina el espacio en blanco por reglas de TeX.
+\end
