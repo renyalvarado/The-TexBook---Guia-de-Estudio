@@ -1,0 +1,6 @@
+\batchmode % Para que no se detenga al utilizar \showbox
+% El espacio depende de la letra, por ejemplo al usar la letra inclinada
+% 'a', no se agrega espacio al final(.\kern 0.0), sin embargo si la letra
+% es 'g', entonces el espacio blanco es más grande: .\kern 0.85649
+\setbox 0=\hbox{\sl g\/} \showbox 0
+\end
