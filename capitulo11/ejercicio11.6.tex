@@ -1,5 +1,4 @@
-% TO-DO - Falta disminuir el tamaño de los operandos y aumentar el tamaño de
-%         de la barra.
-\def\frac#1/#2{#1/#2}
-\frac1/2
+\font\sixrm=cmr6
+\def\frac#1/#2{{\sixrm\raise1ex\hbox{#1}}{\kern-0.1667em}/{\kern-0.1667em}{\sixrm\lower1ex\hbox{#2}}}
+Fracciones: \frac1/2 \frac3/5
 \end
