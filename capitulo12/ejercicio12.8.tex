@@ -1,0 +1,9 @@
+\def\nombre#1{{\it #1\/}}
+\def\comando#1{comando {\tt \string#1\relax}}
+Las dimensiones de \nombre{box1} son: 4 de profundidad, 2pt de alto y 3 de ancho. Los 4 cuatro de profundidad viene 
+dado porque el \comando{\lower3pt} ``baja'' la l\'{\i}nea base de \nombre{box1} 3 puntos, y como esta caja tiene 1pto
+de profundidad por s\'{\i} misma, tenemos $3 + 1 = 4$ puntos de profundidad. Los 2 puntos de altura equivalen a los de
+\nombre{box2} (esta caja mantiene su posici\'on original porque el \comando{\lower} solo afecta al siguiente argumento,
+en este caso a \nombre{box1}). Finalmente los 3 pt de ancho es por el \comando{\hbox{} to 3pt} que establece el tama\~no
+de la caja contenedora.
+\end
