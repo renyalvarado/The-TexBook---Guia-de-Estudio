@@ -1,0 +1,8 @@
+\def\nombre#1{{\it #1\/}}
+\def\comando#1{comando {\tt \string#1\relax}}
+Las dimensiones de \nombre{box3} son: 2pt de profundidad, 3pt de alto y 4 de ancho. Los 2 puntos de profundidad vienen 
+dado por la profundidad de la \'ultima caja(\nombre{box2}) y se toma ese valor ya que no viene seguida de kerning ni de 
+glue (regla definida en la página 80). Los 3ptos de alto resultan de la definici\'on  de altura de la  caja \nombre{box3}
+y finalmente los 4 ptos de ancho se originan del desplazamiento en en 3ptos de la caja \nombre{box1} mas sun ancho (1 pto), 
+$ 3 + 1 = 4$ ptos.
+\end
