@@ -1,0 +1,17 @@
+% Esta pregunta la había hecho anteriormente en Stack Exchange: 
+% http://tex.stackexchange.com/questions/109977/doubts-about-hbox-behavior
+
+\def\comando#1{comando {\tt \string#1}}
+Respuesta: el p\'arrafo no comenzar\'a con el \comando{\hbox} ya que este no cambiar\'a el modo
+de \TeX de modo vertical a horizonal. Se mostrar\'a el contenido de la caja de texto en una
+l\'{\i}nea y el siguiente texto en la l\'{\i}nea de abajo de la siguiente manera:
+
+{\bf texto:}\par {\tt \string\hbox \char`\{Hola\char`\}\ Mundo!}
+
+\vskip 15pt
+
+{\bf salida:}
+
+\hbox{Hola} Mundo!
+
+\bye
