@@ -1,0 +1,22 @@
+\input auxiliar
+
+\titulo{EJERCICIO 14.12}
+
+\bigskip
+
+\enunciado{Explique por qu\'e hay 29881 de desm\'erito desde @@1 hasta 002, y 12621
+de desmérito desde @@2 hasta @@4}.
+
+\medskip
+
+\respuesta{Para el primer caso tenemos que seg\'un la f\'ormula de c\'alculo de 
+desm\'eritos, tenemos que $d = (l + b)^2 + p^2$ ya que $p = 0$; sustituyendo tenemos:
+$d = (10 + 131)^2 + 0^2 = 231^2 + 0^2 = 19881 + 0 = 19881$, sin embargo como las
+l\'{\i}neas 1 y 2 son visualmente incompatible tenemos que ajustar el desm\'erito
+usando el valor de \comando{\adjmerits}: $d = 19881 + 10000 = 29881$. En el segundo 
+caso usamos la mismas f\'ormula pero con sus valores ajustados:
+$d = (10 + 1)^2 + 50^2 = 101^1 + 50^2 = 121 + 2500 = 2621$ y de igual forma ajustamos
+porque existen dos l\'{\i}neas consecutivas incopatibles visualmente, as\'{\i}:
+$d = 2621 + 10000 = 12621$.}
+
+\bye
