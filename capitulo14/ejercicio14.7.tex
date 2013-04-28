@@ -1,0 +1,33 @@
+{\obeylines\smallskip
+Roses are red,
+\quad Violets are blue;
+Rhymes can typeset
+\quad With boxes and glue.
+\smallskip}
+\medskip
+
+\hrule
+
+{\obeylines\smallskip
+Roses are red,
+\indent Violets are blue;
+Rhymes can typeset
+\indent With boxes and glue.
+\smallskip}
+\medskip
+
+\hrule
+
+\medskip
+
+Los poemas anteriores muestran el uso del comando {\tt \string obeylines} y como cambia
+la identaci\'on del texto. En el primera poema, en la segunda y cuarta l\'{\i}nea se 
+muestra el uso del comando {\tt \string\quad} que agrega un espacio en blanco de 1em (para
+verificar esto, usar el comando {\sl tex} y luego escribir en la c\'onsola interactiva:
+{\tt \string\show\string\quad}).
+
+{\bf Pendiente (TO-DO):} ?`Por qu\'e {\tt \string\indent} en el segundo poema no agrega espacio
+en la segunda y cuarta l\'{\i}nea ({\tt \string\indent} funciona solo en la primera l\'{\i}nea
+de los p\'arrafos, pero hice la prueba aplic\'andolo a la primera l\'{\i}nea tambi\'en y no pas\'o
+nada)?
+\bye
