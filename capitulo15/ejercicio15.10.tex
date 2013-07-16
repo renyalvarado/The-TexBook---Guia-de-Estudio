@@ -1,0 +1,14 @@
+\input auxiliar
+
+\titulo{Ejercicio 15.10}
+
+\bigskip
+
+\enunciado{?`Cu\'al es el valor del registro \comando{\box5} despu\'es de los siguientes comandos: ?}
+
+\comandoigual{\setbox5}{\comando{\hbox}\char`\{A\char`\}} \kern 0.4cm \comandoigual{\setbox5}{\comando{\hbox}\char`\{\comando{\copy}\comando{\unbox5}\comando{\box5}\comando{\unhcopy5}\char`\}}
+
+\bigskip
+
+\respuesta{El valor de \comando{\box5} es {\tt \comando{\hbox}\char`\{\comando{\hbox}\char`\{A\char`\}A\char`\}}, ya que luego de aplicar \comando{\unhbox5}, la caja del registro $5$ queda vac\'{\i}a, por lo que el resto de los comandos copain nulo al final de la caja de texto.}
+\bye
