@@ -1,0 +1,14 @@
+\input auxiliar
+
+\titulo{Ejercicio 15.12}
+
+\bigskip
+
+\enunciado{Dise\~ne una macro \comando{\note} que produzca notas al pie numeradas secuencilamente}
+
+\newcount\numeronota
+\def\note#1{\advance\numeronota 1 \footnote{$^{\the\numeronota}$}{#1}}
+
+Uno\note{Es el primer n\'umero}, dos\note{Es es segundo n\'umero}, tres\note{Es el tercer n\'umero}
+
+\bye
