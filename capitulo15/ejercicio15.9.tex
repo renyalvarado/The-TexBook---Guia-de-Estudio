@@ -1,0 +1,13 @@
+\input auxiliar
+
+\titulo{Ejercicio 15.9}
+
+\bigskip
+
+\enunciado{?`Cu\'al es el valor de \comando{\count1} despu\'es de la siguiente secuencia de comandos?}
+{\tt \comandoigual{\count1}{5} \char`{\comandoigual{\count1}{2} \comando{\global}\comando{\advance}\comando{\count1by}\comando{\count}
+
+\ \ \comando{\advance}\comando{\count1by}\comando{\count1}\char`}}
+
+\respuesta{El valor de \comando{\count1} es $4$, ya que toma el valor de la variable del grupo mas interno ($2$), lo duplica y lo ``publica'' con el uso del comando \comando{\global}.}
+\bye
