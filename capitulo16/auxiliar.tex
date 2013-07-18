@@ -1,0 +1,10 @@
+\def\titulo#1{\centerline{\bf#1}}
+
+\def\bloque#1#2{\noindent{\bf #1:} #2\par}
+
+\def\enunciado#1{\bloque{Pregunta}{#1}}
+\def\respuesta#1{\bloque{Respuesta}{#1}}
+\def\comando#1{{\tt\string#1\relax}}
+\def\comandoigual#1#2{\comando#1{\tt=#2\/}}
+
+\def\mostrarvalor#1{{\tt \string#1:\relax} \the#1}
