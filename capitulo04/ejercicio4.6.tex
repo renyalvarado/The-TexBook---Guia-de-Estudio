@@ -1,6 +1,28 @@
+\input ../auxiliar 
+
+\titulo{Ejercicio 4.6}
+
+\bigskip
+
+\enunciado{Indique dos maneras de cargar la tipograf\'{\i}a {\tt cmr10} en la memoria de {\TeX} a la mitad de su tama\~no normal.}
+
+\bigskip
+
+\respuestaS Se puede realizar de la siguiente manera:
+
+|\font\mitaduno=cmr10 at 5pt|
 \font\mitaduno=cmr10 at 5pt
+
+|\font\mitaddos=cmr10 scaled 500|
 \font\mitaddos=cmr10 scaled 500
+
 Texto tama\~no normal
+
+|\mitaduno Disminuyendo el tama\~no de la fuente a 5pt|
+
 \mitaduno Disminuyendo el tama\~no de la fuente a 5pt
+
+|\mitaddos Disminuyendo el tama\~no de la fuente escalando a la mitad|
+
 \mitaddos Disminuyendo el tama\~no de la fuente escalando a la mitad
 \end

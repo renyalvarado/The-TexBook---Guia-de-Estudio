@@ -1,9 +1,0 @@
-Ejercicio 4.5
-Suponga que ha transcrito un manuscrito usando la fuente slanted para
-énfasis, pero su editor de repente le dice que dice que tiene que
-cambiar de slanted a itálica. ¿Cuál es la manera fácil de hacer esto?
-
-Repuesta
-Cambiando al principio la macro \sl para que aplique el mismo formato
-que la letra itálica. Esto se debe hacer también en aquellos contexto
-donde se haya redefinido \s.
