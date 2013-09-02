@@ -1,8 +1,3 @@
-Ejercicio 5.6
-Problema:
-Suponga que \c equivale a '\count1=', \g equivale a '\global\count=1', y \s equivale a '\showthe\count1'. ¿Qué valores se mostrarán?
-{\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s
-
 Respuesta:
 
 Expresión: {\c1\s\g2{\s\c3\s\g4\s\c5\s}\s\c6\s}\s

@@ -1,5 +1,18 @@
-%% Ejercicio 5.1: Escribir sin ligadura tipográficsa la palabra shelfful.
-shelfful con ligaduras
+\input ../auxiliar 
 
-shelf{}ful sin ligaduras
-\end
+\titulo{Ejercicio 5.1}
+
+\bigskip
+
+\enunciado{Algunas veces te topas con palabras raras como `shelfful'
+que lucen mejor como `shelf{}ful', sin la ligadura `ff'. ?`C\'omo
+puedes enga\~na a {\TeX} para que piense que no hay dos f consecutivas
+en una palabra?}
+
+\bigskip
+
+\respuestaS Una de las posibles soluciones es incorporara un `grupo'
+vacio (|{}|) entre las f para evitar la ligadura. Por ejemplo:
+|shelf{}ful|.
+
+\bye

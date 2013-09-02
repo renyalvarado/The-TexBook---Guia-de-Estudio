@@ -1,7 +1,0 @@
-Ejercicio 5.4
-Pregunta:
-(Cómo se vera) el siguiente texto:
-\centerline{This information should be \it centered}
-
-Respuesta:
-El texto se verá centrado y la palabra 'centered' se mostrará en itálica.

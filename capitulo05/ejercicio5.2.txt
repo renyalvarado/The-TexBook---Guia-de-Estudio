@@ -1,7 +1,0 @@
-Ejercicio 5.2
-Pregunta:
-Explique cómo obtener tres espacios en blanco seguidos sin usar \ .
-
-Respuesta:
-Usando {} como separador de espacio como en el siguiente ejemplo
- {} {} .

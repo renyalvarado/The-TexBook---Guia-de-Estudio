@@ -1,6 +1,20 @@
-% El segundo grupo de paréntesis es para que la
-% letra itálica sólo se aplique al texo dentro
-% del macro
+\input ../auxiliar 
+
+\titulo{Ejercicio 5.5}
+
+\bigskip
+
+\enunciadoS Defina una secuencia de control |\ital| tal que un usuario pueda escribir `|\ital{text}|' 
+en vez de `|{\it text \/}|'. Discuta los pro y contra de |\ital| contra |it|.
+
+\bigskip
+
+\respuestaS |\def\ita#1{{\it#1\/}}|
+
 \def\ita#1{{\it#1\/}}
+
+|\ita{Texto It\'alica} Texto Romano|
+
 \ita{Texto It\'alica} Texto Romano
-\end
+
+\bye
