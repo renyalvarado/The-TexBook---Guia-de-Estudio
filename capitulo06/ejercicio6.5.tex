@@ -1,3 +1,25 @@
+
+\input ../auxiliar
+\titulo{Ejercicio 6.3}
+
+\bigskip
+
+\enunciadoS Cuando |\raggedright| ha sido especificado, {\it badness}
+refleja la cantidad de espacio del margen derecho, en vez del espacio
+entre palabras.  Cree un experimento en el que se pueda determinar el
+{\it badness} que {\TeX} asigna a cada l\'{\i}nea cuando {\tt story}
+es colocado a la derecha en columnas de $1.5$ pulgadas.
+
+\bigskip
+
+\respuesta{}
+
+|\hsize=1.5in \tolerance=10000 \raggedright \hbadness=-1 |
+
+|\input story|
+
+\medskip
+
 \hsize=1.5in \tolerance=10000 \raggedright \hbadness=-1 
 \input story
-\end
+\bye

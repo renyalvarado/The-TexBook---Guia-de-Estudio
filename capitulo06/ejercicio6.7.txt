@@ -1,7 +1,0 @@
-Ejercicio 6.7
-Pregunta
-¿Qué pasaría si 'tipeara' '5' luego del error de \vship?
-
-Respuesta:
-Se eliminarían los caracteres '1', 'i', 'n', el espacio en blanco dado
-por la nueva línea y la secuencia de control \centerline.

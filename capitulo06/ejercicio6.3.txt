@@ -1,4 +1,0 @@
-Ejercicio 6.3
-
-La barra vertical indica el lugar donde se produce el 'desborde' del
-texto. En el dvi se visualizará como un cuadro negro.
