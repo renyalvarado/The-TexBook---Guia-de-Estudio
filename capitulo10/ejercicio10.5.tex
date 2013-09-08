@@ -1,5 +1,38 @@
-%\magnification=1200
-%\magnification=1440
+\input ../auxiliar
 \magnification=1728
+
+\titulo{Ejercicio 10.5}
+
+\bigskip
+
+\enunciado{Intente imprimir la historia corta del Cap\'{\i}tulo 6 1.2, 1.44 y 1.768 veces el tama\~no normal. ?`Qu\'e deber\'{\i}as escribir para que {\TeX} haga esto?}
+
+\respuesta{}
+
+\noindent Para el texto 1.2 veces m\'as grande:
+
+|\magnification=1200|
+
+|\input ../capitulo06/story.tex|
+
+\noindent Para el texto 1.44 veces m\'as grande:
+
+|\magnification=1440|
+
+|\input ../capitulo06/story.tex|
+
+\noindent Para el texto 1.728 veces m\'as grande:
+
+|\magnification=1728|
+
+|\input ../capitulo06/story.tex|
+
+\noindent El aumento de texto solo se puede aplicar una sola vez por trabajo. El tama\~no del texto del documento est\'a aumentado 1/728 veces.
+
+\bigskip
+
 \input ../capitulo06/story.tex
-\end
+
+
+\bye
+
