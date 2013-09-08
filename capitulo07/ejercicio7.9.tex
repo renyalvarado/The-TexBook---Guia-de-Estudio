@@ -1,2 +1,19 @@
-\copyright\ \uppercase\expandafter{\romannumeral\year}
+\input ../auxiliar
+\year=1986
+\titulo{Ejercicio 7.9}
+
+\bigskip
+
+\enunciadoS {\TeX} tiene un par\'ametro entero interno llamado |\year|
+que es igual al a\~no actual al comienzo de cada tarea. Explique
+c\'omo usar |\year| junto con |\romannumeral| y |\uppercase| para
+imprimir un aviso de derecho de autor como: `\copyright\
+\uppercase\expandafter{\romannumeral\year}' para todas las tareas
+corridas en \number\year.
+
+\bigskip
+
+\respuestaS |\year=1986 \copyright\
+\uppercase\expandafter{\romannumeral\year}|
 \end
+

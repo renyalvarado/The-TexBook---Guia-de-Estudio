@@ -1,3 +1,19 @@
-% Produce la lista de tokens: A,b,c ya que primero se ejecuta la macro uppercase y lue
-\uppercase{a\lowercase{bC}}
-\end
+\input ../auxiliar
+\titulo{Ejercicio 7.8}
+
+\bigskip
+
+\enunciadoS ?`Qu\'e lista de tokens resulta de 
+`|\uppercase{a\lowercase{bC}}|'?
+
+\bigskip
+
+\respuestaS Produce la lista de tokens: A,b,c ya que primero se
+ejecuta la macro |\uppercase| que origina |A\lowercase{BC}| y luego la
+macro |\lowercase| sobre B y C.
+
+\medskip
+
+Resultado: \uppercase{a\lowercase{bC}}
+\bye
+

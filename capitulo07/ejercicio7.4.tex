@@ -1,0 +1,27 @@
+\input ../auxiliar
+\titulo{Ejercicio 7.4}
+
+\bigskip
+
+\enunciadoS Suponga que los comandos
+
+\medskip
+
+|\catcode'\<=1 \catcode'\>=2|
+
+\medskip
+
+\noindent aparecen cerca del comienzo de un grupo que comienza con
+`|{|'; estas especificaciones le dicen a {\TeX} que trate a |<| y a
+|>| como delimitadores de grupo. De acuerdo a las reglas de localidad
+de {\TeX}, los caracteres |<| y |>| regresan a sus caterog\'{\i}as
+previas cuando el grupo termina. ?`Deber\'{\i}a el grupo finalizar con
+|}| o con |>|?
+
+\bigskip
+
+\respuestaS Con cualquiera de los dos, ya que |}| sigue perteneciendo
+al grupo de caracteres de fin de grupo y en ese contexto |>| también.
+
+\bye
+

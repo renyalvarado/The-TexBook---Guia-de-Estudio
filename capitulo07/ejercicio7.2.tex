@@ -1,0 +1,32 @@
+\input ../auxiliar
+\titulo{Ejercicio 7.2}
+
+\bigskip
+
+\enunciadoS ?` Puede imaginar por qu\'e el dise\~nador de plain {\TeX}
+decidi\'o no hacer `|\\|' la secuencia de control para las barras
+invertidas?
+
+\bigskip
+
+\respuestaS No se me ocurri\'o ninguna :-), es m\'as, en los lenguajes
+de programaci\'on C, C++ y Java, se utiliza `|\\|' para indicar
+literalmente la barra invertida. Copio la respuesta de Knuth:
+
+\medskip
+
+\tolerance 10000
+\noindent|``Reverse slashes (backslashes) are fairly uncommon in
+formulas or text, and \\ is very easy to type it; it was therefore
+felt best not to reserve \\ for such limited use. Typists can define
+\\ to be whatever they want (including \backslash).''|
+
+\tolerance 500
+\medskip
+
+Al parecer el pens\'o que no val\'{\i}a la pena utilizar una
+combinaci\'on tan f\'acil de teclear en un caracter que
+dif\'{\i}cilmente iba a aparecer en un texto.
+
+\bye
+

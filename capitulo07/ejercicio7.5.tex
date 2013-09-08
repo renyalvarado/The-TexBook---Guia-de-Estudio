@@ -1,12 +1,39 @@
-Exercise 7.5
+\input ../auxiliar
+\titulo{Ejercicio 7.5}
 
-%Experiment with TeX to see what \string does when it is followed by an
-%active character like ~. (Active characters behave like control
-%sequences, but they are not prefixed by an escape.) What is an easy
-%way to conduct such experiment online? What control sequence you put
-%after \string to obtain the single character token \12?
+\bigskip
 
+\enunciadoS Experimente con {\TeX} para ver que hace |\string| cuando
+es seguido por aun caracter activo como |~|. Los caracteres activos se
+comportan como secuencias de control, pero ellos no llevan escape como
+prefijo. ?`Cu\'al es una forma f\'acil de llevar a cabo un experimento
+interactivo? Qu\'e secuencia de control se podr\'{\i}a poner despu\'es
+de |\string| para obtener el token del caracter sencillo |\|$_{12}$.
+
+\bigskip
+
+\respuestaS Se puede usar |\message| para obtener valores de forma
+interactiva:
+
+\medskip
+
+\noindent|\message{\string~} % Produce ~ en el archivo de log|
 \message{\string~} % Produce ~ en el archivo de log
+
+\medskip
+
+\noindent|{ % Creamos un bloque para que los cambios realizados solo se apliquen allí|
+
+\noindent|\catcode`*=0 % Ponemos otro caracter para indicar el inicio de una secuencia de control|
+
+\noindent|\catcode`\\=13 % Colocamos al caracter / como elemento activo|
+
+\noindent|*message{*string/} % Mostramos el caracter / en el log.|
+
+\noindent|}|
+
+
+
 
 { % Creamos un bloque para que los cambios realizados solo se apliquen allí.
  \catcode`*=0 % Ponemos otro caracter para indicar el inicio de una secuencia de control, es decir le asignamos al grupo 0.
