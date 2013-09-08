@@ -1,5 +1,15 @@
-% Se genera un error. El segundo caracter de porcentaje (%) se toma como comentario y no
-% permite terminar la instrucción. Se necesita escaparlo con la barra invertida (\).
-\def\%{\char`%}
+\input ../auxiliar
+\titulo{Ejercicio 8.1}
 
-\end
+\bigskip
+
+\enunciadoS ?`Cu\'al es el problema con |\def\%{\char`%}|?
+
+\bigskip
+
+\respuestaS Se genera un error. El segundo caracter de porcentaje
+(|%|) se toma como comentario y no permite terminar la instrucción. Se
+necesita escaparlo con la barra invertida (|\|).
+
+\bye
+

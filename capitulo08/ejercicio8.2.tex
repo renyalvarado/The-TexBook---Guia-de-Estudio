@@ -1,16 +1,75 @@
-% Respuesta:
-% a) La categoría 5 termina la línea y es sustiuido luego por un caracter en blanco (categor%ía 10),
-% sin embargo el  comentario aunque igualmente termina la línea no sustituido por ningún otro caracter,
-% tan solo es ignorado.
-% Ejemplo:
-% a.1 Con caracter con categoría 5 como finalizador de línea: se muestra el texto de las dos líneas con
-% un espacio en blanco entre ellas:
+\input ../auxiliar
+\titulo{Ejercicio 8.2}
+
+\bigskip
+
+\enunciadoS Prueba tu entendimiento de las reglas de lectura de {\TeX} respondiendo las siguientes preguntas:
+
+\noindent a) ?`Cu\'al es la diferencia entre las categor\'{\i}as 5 y
+14?
+
+\noindent b) ?`Cu\'al es la diferencia entre las categor\'{\i}as 3 y
+4?
+
+\noindent c) ?`Cu\'al es la diferencia entre las categor\'{\i}as 11 y
+12?
+
+\noindent d) ?`Son los espacios en blanco ignorado despu\'es de
+caracteres activos ?
+
+\noindent e) ?`Cuando una l\'{\i}nea finaliza con caracter comentario
+como |%|, son los espacios en blanco ignorados al comienzo de la
+siguiente l\'{\i}nea?
+
+\noindent f) ?`Puede un caracter ignorado aparacer en el medio de un
+nombre de una secuencia de control?
+
+\bigskip
+
+\respuestaS
+\noindent a) La categoría 5 termina la línea y es sustiuido luego por
+un caracter en blanco (categor%ía 10), sin embargo el comentario
+aunque igualmente termina la línea no sustituido por ningún otro
+caracter, tan solo es ignorado.
+
+\noindent Ejemplo:
+
+\noindent a.1) Con caracter con categor\'{\i}a 5 como finalizador de l\'{\i}nea: se muestra el texto de las dos l\'{\i}neas con un espacio en blanco entre ellas:
+
+\noindent |Linea 1|
+
+\noindent |Linea 2|
+
 Linea 1
 Linea 2
 
-% a.2 Con caracter con categoría 10 como finalizador de línea: se muestra el texto de las dos líneas juntas:
-Linea 1%
-Linea 2
-\end
+\medskip
 
-% b) c) d) e) f) TO-DO
+\noindent a.2) Con caracter con categor\'{\i}a 10 como finalizador de l\'{\i}nea, se muestra el texto de las dos l\'{\i}neas junto:
+
+\noindent |Linea 1%|
+
+\noindent |Linea 2|
+
+\medskip
+
+\noindent b) TO-DO
+
+\medskip
+
+\noindent c) TO-DO
+
+\medskip
+
+\noindent d) TO-DO
+
+\medskip
+
+\noindent e) TO-DO
+
+\medskip
+
+\noindent f) TO-DO
+
+\bye
+
