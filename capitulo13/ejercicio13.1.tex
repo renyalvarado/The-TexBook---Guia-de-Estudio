@@ -1,17 +1,24 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 13.1}
+
+\bigskip
+
+\enunciadoS Si se escribe `|\hbox{...}|' en modo horizontal, {\TeX} construir\'a la caja especificada y pondr\'a el resultado al p\'arrafo actual. De igual manera, si se escribe `|\hbox{...}|' en modo vertical, {\TeX} construir\'a una caja y la pondr\'a en la p\'agina actual. ?`Qu\'e se puede hacer si se quiere que el p\'arrafo comience con un |\hbox|?
+
+\bigskip
 % Esta pregunta la había hecho anteriormente en Stack Exchange: 
 % http://tex.stackexchange.com/questions/109977/doubts-about-hbox-behavior
 
-\def\comando#1{comando {\tt \string#1}}
-Respuesta: el p\'arrafo no comenzar\'a con el \comando{\hbox} ya que este no cambiar\'a el modo
-de \TeX de modo vertical a horizonal. Se mostrar\'a el contenido de la caja de texto en una
+\respuestaS Se podr\'{\i}a empezar usando la macro |\noindent|. El problema de empezar con |\hbox| es que no cambiar\'a el modo
+de \TeX de modo vertical a horizonal y se mostrar\'a el contenido de la caja de texto en una
 l\'{\i}nea y el siguiente texto en la l\'{\i}nea de abajo de la siguiente manera:
 
-{\bf texto:}\par {\tt \string\hbox \char`\{Hola\char`\}\ Mundo!}
+|\hbox{Hola} Mundo!|
 
-\vskip 15pt
-
-{\bf salida:}
+\medskip
 
 \hbox{Hola} Mundo!
 
 \bye
+
