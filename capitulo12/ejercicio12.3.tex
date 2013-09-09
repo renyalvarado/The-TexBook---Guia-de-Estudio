@@ -1,25 +1,45 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 12.3}
+
+\bigskip
+
+\enunciado{Indique c\'omo se comportan diferente las siguientes
+macros:}
 \def\centerlinea#1{\line{\hfil#1\hfil}}
-
 \def\centerlineb#1{\line{\hfill#1\hfill}}
-
 \def\centerlinec#1{\line{\hfill#1\hfill}}
+
+|\def\centerlinea#1{\line{\hfil#1\hfil}}|
+
+|\def\centerlineb#1{\line{\hfill#1\hfill}}|
+
+|\def\centerlinec#1{\line{\hfill#1\hfill}}|
+
+\respuestaS Los 3 |\centerline| terminan centrando el texto porque
+aunque sus ``glue'' tienen distintos ``grados'' de infinito, se
+utiliza el mismo tipo de infinito a la izquierda y a la derecha del
+texto.
+
+En |\centerlinea| se usa el glue |\hfil|, en |\centerlineb| se usa un
+glue que puede expandirse mas (|\hfill|) y en |\centerlinec| se usa el
+glue |\hss| que pueda expandirse y encogerse al infinito. Si el
+tama\~no del texto es mayor que el de la l\'{\i}nea, tanto
+|\centerlinea| como |\centerlineb| producen un ``overfull box'', en
+cambio |\centerlinec| permite encoger el glue para adaptarlo al tamaño
+de la l\'{\i}nea.
+
+|\centerlinea{Hello World!}|
 
 \centerlinea{Hello World!}
 
+|\centerlineb{Hello World!}|
+
 \centerlineb{Hello World!}
+
+|\centerlinec{Hello World!}|
 
 \centerlinec{Hello World!}
 
-\def\textoescapado#1{{\tt \string#1\relax}}
+\bye
 
-
-Los 3 \textoescapado{\centerline} terminan centrando el texto porque aunque sus ``glue'' tienen
-distintos ``grados'' de infinito, se utiliza el mismo tipo de infinito a la izquierda y a la
-derecha del texto. En \textoescapado{\centerlinea} se usa el glue \textoescapado{\hfil}, en 
-\textoescapado{\centerlineb} se usa un glue que puede expandirse mas (\textoescapado{\hfill}) y 
-en \textoescapado{\centerlinec} se usa el glue \textoescapado{\hss} que pueda expandirse y 
-encogerse al infinito. Si el tama\~no del texto es mayor que  el de la l\'{\i}nea, tanto 
-\textoescapado{\centerlinea} como \textoescapado{\centerlineb} producen un ``overfull box'', en
-cambio \textoescapado{\centerlinec} permite encoger el glue para adaptarlo al tamaño de la l\'{\i}nea.
-
-\end

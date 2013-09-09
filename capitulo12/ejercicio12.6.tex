@@ -1,6 +1,14 @@
-% Separando el texto en mayúsculas del punto, por ejemplo con \hbox
-NAS\hbox{A}.
+\input ../auxiliar
 
+\titulo{Ejercicio 12.6}
 
-... see Appendix \hbox{A}.
-\end
+\bigskip
+
+\enunciado{?`Qu\'e hacer para que {\TeX} reconozca los finales de oraci\'on que finalicen con letras may\'usculas, por ejemplo: `... launched by NASA.' o `Did I?' o `... see Appendix A.'?}
+
+\bigskip
+
+\respuestaS Separando las may\'usculas del punto, por ejemplo usando |\hbox|: `|NAS\hbox{A}.|' o `|... see Appendix \hbox{A}.|'.
+
+\bye
+

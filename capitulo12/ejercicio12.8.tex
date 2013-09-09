@@ -1,9 +1,35 @@
-\def\nombre#1{{\it #1\/}}
-\def\comando#1{comando {\tt \string#1\relax}}
-Las dimensiones de \nombre{box1} son: 4 de profundidad, 2pt de alto y 3 de ancho. Los 4 cuatro de profundidad viene 
-dado porque el \comando{\lower3pt} ``baja'' la l\'{\i}nea base de \nombre{box1} 3 puntos, y como esta caja tiene 1pto
-de profundidad por s\'{\i} misma, tenemos $3 + 1 = 4$ puntos de profundidad. Los 2 puntos de altura equivalen a los de
-\nombre{box2} (esta caja mantiene su posici\'on original porque el \comando{\lower} solo afecta al siguiente argumento,
-en este caso a \nombre{box1}). Finalmente los 3 pt de ancho es por el \comando{\hbox{} to 3pt} que establece el tama\~no
-de la caja contenedora.
-\end
+\input ../auxiliar
+
+\titulo{Ejercicio 12.8}
+
+\bigskip
+
+\enunciadoS Asuman que |\box1| tiene 1 pt de altura, 1 pt de
+profundidad y 1 pt de ancho; |\box2| tiene 2 pt de altura, 2 pt de
+profundidad y 2 pt de ancho. Una tercera caja ({\it box}) es creada de
+la siguiente manera:
+
+\medskip
+
+|\setbox3=\hbox to3pt{\hfil\lower3pt\box1\hskip-3pt plus3fil\box2}|
+
+\medskip
+
+\noindent ?`Cu\'al es la altura, profundidad y anchura de |\box3|?
+Describa la posici\'on de los puntos de referencia de las cajas ({\it
+boxes}) 1 y 2 con respecto al punto de referencia de la caja 3.
+
+\bigskip
+
+\respuestaS Las dimensiones de |\box3| son: 4 de profundidad, 2pt de
+alto y 3 de ancho. Los 4 cuatro de profundidad viene dado porque el
+|\lower3pt| ``baja'' la l\'{\i}nea base de |\box1| 3 puntos, y como
+esta caja tiene 1pto de profundidad por s\'{\i} misma, tenemos $3 + 1
+= 4$ puntos de profundidad. Los 2 puntos de altura equivalen a los de
+|\box2| (esta caja mantiene su posici\'on original porque el |\lower|
+solo afecta al siguiente argumento, en este caso a
+|\box1|). Finalmente los 3 pt de ancho es por el |\hbox{} to 3pt| que
+establece el tama\~no de la caja contenedora.
+
+\bye
+
