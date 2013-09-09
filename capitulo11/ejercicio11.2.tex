@@ -1,6 +1,32 @@
-\batchmode % Para que no se detenga al utilizar \showbox
-% El espacio depende de la letra, por ejemplo al usar la letra inclinada
-% 'a', no se agrega espacio al final(.\kern 0.0), sin embargo si la letra
-% es 'g', entonces el espacio blanco es más grande: .\kern 0.85649
+\input ../auxiliar
+
+\titulo{Ejercicio 11.2}
+
+\bigskip
+
+\enunciado{Mediante la ejecuci\'on de {\TeX}, averig\"ue c\'omo se
+maneje la correciones it\'alicas a caracteres: ?`C\'omo son las
+correciones representadas dentro de un box?}
+
+\bigskip
+
+\respuestaS Para realizar la prueba utilizamos una combinaci\'on de
+dos comandos como: |\showbox| que nos permite ver los boxes y
+|\batchmode| para que entre en modo lote y no se detenga al utilizar
+|\showbox| sino que redirija todos los mensajes al archivo de log. El
+espacio depende de la letra, por ejemplo al usar la letra inclinada
+`|a|', no se agrega espacio al final(|.\kern 0.0|), sin embargo si la
+letra es `g', entonces el espacio blanco es más grande: |.\kern
+0.85649|.
+
+\medskip
+
+Ejemplo utilizado
+
+|\batchmode |
+
+|\setbox 0=\hbox{\sl g\/} \showbox 0|
+
+\batchmode % 
 \setbox 0=\hbox{\sl g\/} \showbox 0
 \end

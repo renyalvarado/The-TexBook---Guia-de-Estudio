@@ -1,5 +1,39 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 11.3}
+
+\bigskip
+
+\enunciado{El opuesto al logo de {\TeX}, llamado 
+{T\kern+.1667em\raise.5ex\hbox{E}\kern+.125em X} es producido por:}
+
+|\setbox1=\hbox{{T\kern+.1667em\raise.5ex\hbox{E}\kern+.125em X}}|
+
+\noindent ?`Qu\'e deber\'{\i}a mostrar |\showbox1| ahora?
+
+\bigskip
+
+\respuestaS 
+
 \batchmode % Para que no se detenga al utilizar \showbox
-\setbox1=\hbox{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125em X}
+\setbox1=\hbox{{T\kern+.1667em\raise.5ex\hbox{E}\kern+.125em X}}
 \showbox1
 
-\end
+|> \box1=|
+
+|\hbox(8.98608+0.0)x24.44484|
+
+|.\tenrm T|
+
+|.\kern 1.66702|
+
+|.\hbox(6.83331+0.0)x6.80557, shifted -2.15277|
+
+|..\tenrm E|
+
+|.\kern 1.25|
+
+|.\tenrm X|
+
+\bye
+

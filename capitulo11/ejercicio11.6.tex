@@ -1,4 +1,26 @@
+\input ../auxiliar
+
 \font\sixrm=cmr6
-\def\frac#1/#2{{\sixrm\raise1ex\hbox{#1}}{\kern-0.1667em}/{\kern-0.1667em}{\sixrm\lower1ex\hbox{#2}}}
-Fracciones: \frac1/2 \frac3/5
-\end
+\def\frac#1/#2{
+{\sixrm\raise1ex\hbox{#1}}{\kern-0.1667em}/{\kern-0.1667em}{\sixrm\lower1ex\hbox{#2}}
+}
+
+\titulo{Ejercicio 11.6}
+
+\bigskip
+
+\enunciadoS Construya una macro |\frac| tal que `|\frac1/2|' genere \frac1/2 .
+
+\bigskip
+
+\respuestaS
+
+\noindent|\font\sixrm=cmr6|
+
+\noindent|\def\frac#1/#2{|
+
+\noindent|{\sixrm\raise1ex\hbox{#1}}{\kern-0.1667em}/{\kern-0.1667em}{\sixrm\lower1ex\hbox{#2}}|
+
+\noindent|}|
+\bye
+
