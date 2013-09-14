@@ -1,18 +1,26 @@
-\input auxiliar
+\input ../auxiliar
 
-\titulo{EJERCICIO 14.26}
+\titulo{Ejercicio 14.26}
 
-\enunciado{Considere un p\'arrafo de cinco l\'{\i}neas en el cual
-la segunda y la cuarta l\'{\i}neas terminan con un gui\'on. ?`Cu\'al es
+\bigskip
+
+\enunciadoS{Considere un p\'arrafo de cinco l\'{\i}neas en el cual la
+segunda y la cuarta l\'{\i}neas terminan con un gui\'on. ?`Cu\'al es
 la penalizaci\'on que plain \TeX{} colocar\'a entre las l\'{\i}neas?}
+
+\bigskip
 
 \respuesta{La penalizaci\'on para cada una de las l\'{\i}neas es: 150, 100, 0, 250. Los c\'alculos detallados a continuaci\'on:
 }
 \medskip
 
 
-\item{1.- } \comando{\clubpenalty}{\it{} \/(primera l\'{\i}nea)\/} = $150$.
-\item{2.- } \comando{\brokenpenalty}{\it{} \/(l\'{\i}nea con gui\'on)\/} = $100$.
-\item{3.- } Sin penalizaci\'on = $0$.
-\item{4.- } \comando{\widowpenalty}{\it{} \/(pen\'ultima l\'{\i}nea)\/} $+$ \comando{\brokenpenalty}{\it{} \/(l\'{\i}nea con gui\'on)\/} = $150 + 100$.
-\end
+\item{1.- } |\clubpenalty|{\it{} \/(primera l\'{\i}nea)\/} = $150$.
+\item{2.- } |\brokenpenalty|{\it{} \/(l\'{\i}nea con gui\'on)\/} =
+$100$.  
+\item{3.- } Sin penalizaci\'on = $0$.  
+\item{4.- }|\widowpenalty|{\it{} \/(pen\'ultima l\'{\i}nea)\/} $+$
+|\brokenpenalty|{\it{} \/(l\'{\i}nea con gui\'on)\/} = $150 + 100$.
+
+\bye
+
