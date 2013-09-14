@@ -1,3 +1,26 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 14.7}
+
+\bigskip
+
+\enunciadoS Explique el uso de |\quad| en este poema:
+
+|Roses are red,|
+
+|\quad Violets are blue;|
+
+|Rhymes can typeset|
+
+|\quad With boxes and glue.|
+
+\noindent?`Qu\'e hubiera pasado si `|\quad|' hubiera sido reemplazado
+por `|\indent|' en ambos sitios?
+
+\bigskip
+
+\respuesta{}
+
 {\obeylines\smallskip
 Roses are red,
 \quad Violets are blue;
@@ -20,14 +43,16 @@ Rhymes can typeset
 
 \medskip
 
-Los poemas anteriores muestran el uso del comando {\tt \string obeylines} y como cambia
-la identaci\'on del texto. En el primera poema, en la segunda y cuarta l\'{\i}nea se 
-muestra el uso del comando {\tt \string\quad} que agrega un espacio en blanco de 1em (para
-verificar esto, usar el comando {\sl tex} y luego escribir en la c\'onsola interactiva:
-{\tt \string\show\string\quad}).
+Los poemas anteriores muestran el uso del comando |\obeylines| y como
+cambia la identaci\'on del texto. En el primer poema, en la segunda y
+cuarta l\'{\i}nea se muestra el uso del comando |\quad| que agrega un
+espacio en blanco de 1em (para verificar esto, usar el comando {\sl
+tex} y luego escribir en la c\'onsola interactiva: |\show\quad|).
 
-{\bf Pendiente (TO-DO):} ?`Por qu\'e {\tt \string\indent} en el segundo poema no agrega espacio
-en la segunda y cuarta l\'{\i}nea ({\tt \string\indent} funciona solo en la primera l\'{\i}nea
-de los p\'arrafos, pero hice la prueba aplic\'andolo a la primera l\'{\i}nea tambi\'en y no pas\'o
-nada)?
+{\bf Pendiente (TO-DO):} ?`Por qu\'e |\indent| en el segundo poema no
+agrega espacio en la segunda y cuarta l\'{\i}nea (|\indent| funciona
+solo en la primera l\'{\i}nea de los p\'arrafos, pero hice la prueba
+aplic\'andolo a la primera l\'{\i}nea tambi\'en y no pas\'o nada)?
+
 \bye
+
