@@ -1,11 +1,15 @@
-\input auxiliar
+\input ../auxiliar
 
 \titulo{Ejercicio 15.11}
 
 \bigskip
 
-\enunciado{?`Cu\'al es el valor de \comando{\box3} despu\'es de `{\tt \char`\{\comando{\global}\comandoigual{\setbox3}{\comando{\hbox}\char`\{A\char`\}}\comandoigual{\setbox3}{\comando{\hbox}\char`\{\char`\}}\char`\}}'?}
+\enunciadoS ?`Cu\'al es el valor de |\box3| despu\'es de
+`|{\global\setbox3=\hbox{A}\setbox3=\hbox{}}|'?
 
-\respuesta{El valor de \comando{\box3} es {\tt \comando{\hbox}\char`\{A\char`\}}}
+\bigskip
+
+\respuestaS El valor de |\box3| es |\hbox{A}|.
 
 \bye
+

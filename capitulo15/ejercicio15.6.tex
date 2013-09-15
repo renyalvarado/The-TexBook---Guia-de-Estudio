@@ -1,43 +1,67 @@
-\input auxiliar
+\input ../auxiliar
 
 \titulo{Ejercicio 15.6}
 
 \bigskip
 
-\enunciado{Pruebe sus conocimientos de los registros de \TeX\/ indicando los resultados de cada uno de los siguientes comandos cuando son ejecutados en secuencia:}
-{\tt \comandoigual{\count1}{50} \kern0.4cm \comandoigual{\dimen2}{\comando{\count1}pt} \kern0.4cm \comando{\divide}\comando{\count1} by 8
+\enunciadoS Pruebe sus conocimientos de los registros de {\TeX}
+indicando los resultados de cada uno de los siguientes comandos cuando
+son ejecutados en secuencia:
 
-\comandoigual{\skip2}{-10pt plus \comando{\count1fil} minus \comando{\dimen2}}
+|\count1=50| \kern0.4cm 
+|\dimen2=\count1pt| \kern0.4cm |\divide\count1 by 8|
 
-\comando{\multiply}\comando{\skip2} by -\comando{\count1} \comando{\divide}\comando{\skip2} by \comando{\dimen2} \kern0.4cm \comando{\count6}=\comando{\skip2}
+|\skip2=-10pt plus\count1fil minus\dimen2|
 
-\comandoigual{\skip1}{.5\comando{\dimen2} plus\comando{\skip2} minus\comando{\count}\comando{\count1fill}}
+|\multiply\skip2 by-\count1| \kern0.4cm 
+|\divide\skip2 by \dimen2 \count6 \skip2|
 
-\comando{\multiply}\comando{\skip2} by\comando{\skip1} \kern0.4cm \comando{\advance}\comando{\skip1} by-\comando{\skip2}}
+|\skip1=.5\dimen2 plus\skip2 minus\count\count1fill|
+
+|\multiply\skip2 by\skip1| \kern0.4cm 
+|\advance\skip1 by-\skip2|
 
 \bigskip
 
 \respuesta{Los resultados de los c\'alculos son: }
-{\tt \comandoigual{\count1}{50}} \kern0.4cm  \count1=50   \the\count1
 
-{\tt \comandoigual{\dimen2}{\comando{\count1}pt}} \kern0.4cm \dimen2=\count1pt  \the\dimen2
+|\count1=50| \kern0.4cm 
+\count1=50 \the\count1
 
-{\tt \comando{\divide}\comando{\count1} by 8} \kern0.4cm \divide\count1 by 8 \the\count1
+|\dimen2=\count1pt| \kern0.4cm
+\dimen2=\count1pt \the\dimen2
+
+|\divide\count1 by 8| \kern0.4cm
+\divide\count1 by 8 \the\count1
 
 \medskip
 
-{\tt \comandoigual{\skip2}{-10pt plus \comando{\count1fil} minus \comando{\dimen2}}} \kern0.4cm \skip2=-10pt plus \count1fil minus \dimen2  \the\skip2
+|\skip2=-10pt plus \count1fil minus \dimen2| \kern0.4cm 
+\skip2=-10pt plus \count1fil minus \dimen2 \the\skip2
 
-{\tt \comando{\multiply}\comando{\skip2} by -\comando{\count1}} \kern0.4cm \multiply\skip2 by -\count1 \the\skip2
+\medskip
 
-{\tt \comando{\divide}\comando{\skip2} by \comando{\dimen2}} \kern0.4cm \divide\skip2 by \dimen2 \the\skip2sp
+|\multiply\skip2 by -\count1| \kern0.4cm 
+\multiply\skip2 by -\count1 \the\skip2
 
-{\tt \comando{\count6}=\comando{\skip2}} \kern0.4cm \count6=\skip2 \the\count6
+|\divide\skip2 by \dimen2| \kern0.4cm 
+\divide\skip2 by \dimen2 \the\skip2
 
-{\tt \comandoigual{\skip1}{.5\comando{\dimen2} plus\comando{\skip2} minus\comando{\count}\comando{\count1fill}}} \kern0.4cm \skip1=.5\dimen2 plus\skip2  minus \count\count1fill  \the\skip1
+|\count6=\skip2| \kern0.4cm 
+\count6=\skip2 \the\count6
 
-{\tt \comando{\multiply}\comando{\skip2} by\comando{\skip1}} \kern0.4cm \multiply\skip2 by \skip1 \the\skip2
+\medskip
 
-{\tt \comando{\advance}\comando{\skip1} by-\comando{\skip2}} \kern0.4cm \advance\skip1 by \skip2 \the\skip1
+|\skip1=.5\dimen2 plus\skip2  minus \count\count1fill| \kern0.4cm 
+\skip1=.5\dimen2 plus\skip2  minus \count\count1fill  \the\skip1
+
+\medskip
+
+|\multiply\skip2 by \skip1| \kern0.4cm 
+\multiply\skip2 by \skip1 \the\skip2
+
+|\advance\skip1 by \skip2| \kern0.4cm 
+\advance\skip1 by \skip2 \the\skip1
 
 \bye
+
