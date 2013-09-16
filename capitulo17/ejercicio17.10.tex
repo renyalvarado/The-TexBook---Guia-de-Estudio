@@ -1,13 +1,25 @@
-\input auxiliar
-\titulo{Ejercicio 17.10}
+\centerline{Ejercicio 17.10}
 
 \bigskip
 
-\enunciado{Indique como tipear la f\'ormula} 
+\noindent{\bf Pregunta} Indique como tipear la f\'ormula
 
-$$ \biggl({\partial \over \partial x^2} + {\partial \over \partial y^2}\bigl|\varphi(x + iy)\bigr|^2\biggr)  $$
+$$ \biggl({\partial \over \partial x^2} + {\partial \over 
+\partial y^2}\bigl|\varphi(x + iy)\bigr|^2\biggr)$$
 
-\noindent usando los delimitadores \comando{\bigg} para par\'entesis grandes. Los s\'{\i}mbolos $\partial$ y 
-$\varphi$ que aparecen aqu\'{\i} pueden ser llamados usando \comando{\partial} y \comando{\varphi}.
+\input ../auxiliar
 
+\noindent usando los delimitadores |\bigg| para par\'entesis
+grandes. Los s\'{\i}mbolos $\partial$ y $\varphi$ que aparecen
+aqu\'{\i} pueden ser llamados usando |\partial| y |\varphi|.
+
+\bigskip 
+
+\respuestaS
+
+|$$ \biggl({\partial \over \partial x^2} + {\partial \over |
+
+|\partial y^2}\bigl|{\tt \char`\|}
+|\varphi(x + iy)\bigr|{\tt \char`\|}|^2\biggr)$$|
 \bye
+

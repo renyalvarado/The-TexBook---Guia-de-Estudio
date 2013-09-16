@@ -1,24 +1,23 @@
-\input auxiliar
+\input ../auxiliar
 
 \titulo{Ejercicio 17.20}
 
 \bigskip
 
-\enunciado{Comandos como \comando{\mathchardef}\comando{\alpha}{\tt=''010B} \char026 son usados en 
+\enunciadoS Comandos como |\mathchardef\alpha=''010B| son usados en 
 el Ap\'endice B para definir las letras griegas min\'usculas. Suponga que
 quiere extender plain \TeX colocando las letras metem\'aticas it\'alicas 
 negrillas en la familia 9, analogamente a las letras matem\'aticas it\'alicas
 en la familia 1 (estas fuentes no est\'an disponbibles en las versiones 
 simplificadas de \TeX, pero asumamos que existen). Asuma que la secuencia de
-control \comando{\bmit} ha sido definida como una abreviatura de `{\tt 
-\comando{\fam}=9}', por lo tanto `{\tt\char`\{\comando{\bmit} b\char`\}}'
+control |\bmit| ha sido definida como una abreviatura de `|\fam=9|', por lo tanto `|\bmit b}|'
 generar\'a una  {\tt b } matem\'atica it\'alica negrilla. ?`Qu\'e cambio a la 
-definici\'on de \comando{\alpha} har\'a que 
-{\tt\char`\{\comando{\bmit}\comando{\alpha}\char`\}} produzca un alfa en
-negrilla.}
+definici\'on de |\alpha| har\'a que |\bmit\alpha| produzca un alfa en
+negrilla.
 
 \bigskip
 
-\respuesta{\comando{\mathchardef}\comando{\alpha}{\tt=''710B}.}
+\respuestaS |\mathchardef\alpha=''710B|.
 
 \bye
+
