@@ -1,0 +1,29 @@
+\input ../auxiliar
+\titulo{Ejercicio 18.3}
+
+\bigskip
+
+\enunciadoS Cuando |$$ \lim_{n \to\infty}x_n {\rm\ exists} \iff \limsup_{n\to\infty}x_n =| 
+
+\noindent|\liminf_{n\to\infty}x_n$$| es escrita con las macros est\'andar de plain {\TeX}
+se obtiene
+
+$$ \lim_{n \to\infty}x_n {\rm\ exists} \iff \limsup_{n\to\infty}x_n = 
+\liminf_{n\to\infty}x_n .$$
+
+Pero algunas personas prefieren una notaci\'on diferente: explique como puede cambiar
+la definici\'on de |\limsup| y |\lininf| para que se muestre:
+\def\limsup{\mathop{\overline {\rm lim}}}
+\def\liminf{\mathop{\underline {\rm lim}}}
+
+$$ \lim_{n \to\infty}x_n {\rm\ exists} \iff \limsup_{n\to\infty}x_n = 
+\liminf_{n\to\infty}x_n .$$
+
+\respuestaS
+
+|\def\limsup{\mathop{\overline {\rm lim}}}|
+
+|\def\liminf{\mathop{\underline {\rm lim}}}|
+
+\bye
+
