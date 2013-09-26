@@ -1,3 +1,42 @@
-% TO-DO
+\input ../auxiliar
+\titulo{Ejercicio 18.9}
+
+\bigskip
+
+\enunciado{?`C\'omo escribir\'{\i}as el siguiente programa usando las
+macros de plain {\TeX}?}
+
+{\obeylines 
+{\bf for $j := 2$ step $1$ until $n$ do}
+\ \ {\bf begin} $accum := A[j]$; $k := j - 1$; $A[0] := accum$;
+\ \ {\bf while $A[k] > accum$ do}
+\ \ \ \ {\bf begin} $A[k + 1] := A[k]$; $k := k - 1$;
+\ \ \ \ {\bf end};
+\ \ $A[k + 1] := accum$;
+\ \ {\bf end};
+}
+
+\bigskip
+
+\respuestaS
+
+|{\obeylines|
+
+|{\bf for $j := 2$ step $1$ until $n$ do}|
+
+|\ \ {\bf begin} $accum := A[j]$; $k := j - 1$; $A[0] := accum$;|
+
+|\ \ {\bf while $A[k] > accum$ do}|
+
+|\ \ \ \ {\bf begin} $A[k + 1] := A[k]$; $k := k - 1$;|
+
+|\ \ \ \ {\bf end};|
+
+|\ \ $A[k + 1] := accum$;|
+
+|\ \ {\bf end};|
+
+|}|
+
 \bye
 
