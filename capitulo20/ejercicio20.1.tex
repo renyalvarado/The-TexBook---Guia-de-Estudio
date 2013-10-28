@@ -1,0 +1,37 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 20.1}
+
+\bigskip
+
+\enunciadoS Escriba una macro |\punishment| que imprima 100
+l\'{\i}neas conteniendo el mensaje `No debo hablar en clase'. {\sl
+Pista}: Primero escriba una macro |\mustnt| que imprima el mensaje una
+vez, luego escriba una macro |\five| que lo imprima cinco veces.
+
+\bigskip
+
+\respuestaS 
+
+|def\musnt{No debo hablar en clase\par}|
+
+|def\five{\musnt\musnt\musnt\musnt\musnt}|
+
+|def\twentyfive{\five\five\five\five\five}|
+
+|def\punishment{\twentyfive\twentyfive\twentyfive\twentyfive}|
+
+\medskip
+
+\def\musnt{No debo hablar en clase\par}
+
+\def\five{\musnt\musnt\musnt\musnt\musnt}
+
+\def\twentyfive{\five\five\five\five\five}
+
+\def\punishment{\twentyfive\twentyfive\twentyfive\twentyfive}
+
+\punishment
+
+\bye
+

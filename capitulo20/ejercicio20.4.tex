@@ -1,0 +1,43 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 20.4}
+
+\bigskip
+
+\enunciadoS Extendiendo el ejercicio $20.1$, escriba una macro
+`castigo generalizado' que tenga dos par\'ametros, tal que
+|\punishment{run}{the halls}| produzca 100 p\'arrafos que diga `I must
+not run in the halls'.
+
+\bigskip
+
+\respuestaS 
+
+|\def\musnt#1#2{I must not #1 in #2\par}|
+
+|\def\five#1#2{\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}}|
+
+|\def\twentyfive#1#2{\five{#1}{#2}\five{#1}{#2}\five{#1}{#2}|
+
+|\five{#1}{#2}\five{#1}{#2}}|
+
+|\def\punishment#1#2{\twentyfive{#1}{#2}\twentyfive{#1}{#2}\twentyfive{#1}{#2}|
+
+|\twentyfive{#1}{#2}\twentyfive{#1}{#2}}|
+
+|\punishment{run}{the halls}|
+
+\medskip
+
+\def\musnt#1#2{I must not #1 in #2\par}
+
+\def\five#1#2{\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}\musnt{#1}{#2}}
+
+\def\twentyfive#1#2{\five{#1}{#2}\five{#1}{#2}\five{#1}{#2}\five{#1}{#2}\five{#1}{#2}}
+
+\def\punishment#1#2{\twentyfive{#1}{#2}\twentyfive{#1}{#2}\twentyfive{#1}{#2}\twentyfive{#1}{#2}\twentyfive{#1}{#2}}
+
+\punishment{run}{the halls}
+
+\bye
+
