@@ -1,0 +1,18 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 20.8}
+
+\bigskip
+
+\enunciadoS ?`Existe alguna diferencia significativa entre
+`|\let\a=\b|' y `|\def\a{\b}|'?
+
+\bigskip
+
+\respuestaS Si, en el primer ejemplo |\a| es igual a la definici\'on
+de |\b| en {\it ese momento}; si la definici\'on de |\b| cambia, |\a|
+seguir\'{\i}a atada a la definici\'on original de |\b|. En el segundo
+ejemplo, |\a| siempre invocar\'a a la definici\'on actual de |\b|.
+
+\bye
+

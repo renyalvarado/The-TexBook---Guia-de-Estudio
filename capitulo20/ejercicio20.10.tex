@@ -1,0 +1,66 @@
+\input ../auxiliar
+
+\titulo{Ejercicio 20.10}
+
+\bigskip
+
+\enunciadoS Contin\'ue el ejemplo de IRS, asuma que |\fullypaid| y
+|\underpaid| est\'an definidos como:
+\medskip
+|\def\fullypaid{Your taxes are fully paid---thank you.}|
+\medskip
+|\def\underpaid{{\count0=-balance|
+
+\quad|\ifnum\count0<100|
+
+\qquad|You owe \dollaramount, but you need not pay it, because|
+
+\qquad|our policy is to disregard amounts less than \$1.00.|
+
+\quad|\else Please remit \dollaramount within ten days,|
+
+\qquad|or additional interest charges will be due.\fi}}|
+\medskip
+
+\noindent Escriba una macro |\overpaid| y asuma que |\dollaramount| es
+una macro que genera el contenido de |\count0| en d\'olares y
+centavos. La macro deber\'{\i}a decir que un cheque ser\'a enviado por
+correo en un sobre aparte al menos que el monto sea menor que \$1.00,
+en cuyo caso la persona debe solicitar expl\'{\i}citamente un cheque.
+
+\bigskip
+
+\countdef\balance=100
+\balance=1000
+
+\def\overpaid{{\count0=\balance
+  \ifnum\count0<100
+    Usted ha pagado \dollaramount de m\'as. Si desea un cheque por ese 
+    monto, entonces realice una solicitud, ya que no se acostumbra 
+    enviar cheques de manera autom\'atica cuando el monto es inferior
+    a 1\$.00.
+  \else Usted ha pagado \dollaramount\/ de m\'as. Un cheque con ese 
+    monto ser\'a enviado autom\'aticamente .\fi}}
+%\overpaid
+
+\respuestaS
+
+
+|\def\overpaid{{\count0=\balance|
+
+\quad|\ifnum\count0<100|
+
+\qquad|Usted ha pagado \dollaramount de m\'as. Si desea un cheque por ese|
+
+\qquad|monto, entonces realice una solicitud, ya que no se acostumbra|
+
+\qquad|enviar cheques de manera autom\'atica cuando el monto es inferior|
+
+\qquad|a 1\$.00.|
+
+\quad|\else Usted ha pagado \dollaramount\/ de m\'as. Un cheque con ese|
+
+\qquad|monto ser\'a enviado autom\'aticamente .\fi}}|
+
+\bye
+
