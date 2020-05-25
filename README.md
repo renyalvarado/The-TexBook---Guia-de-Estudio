@@ -1,4 +1,4 @@
 The-TexBook---Guia-de-Estudio
 =============================
 
-Notas y ejercicios organizados por capítulos de el libro 'The TexBook' de Donald Knuth.
+Notes and exercises organized by chapters of Donald Knuth's book 'The TexBook'.
